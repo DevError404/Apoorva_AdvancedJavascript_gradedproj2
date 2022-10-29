@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title>Resume Sorter</title>
+
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../index.js"></script>
+	</head>
+
+	<body>
+		<br />
+
+		<div class="container" id="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-3">
+					<div class="input-group">
+						<span
+							id="previous"
+							class="input-group-btn"
+							style="padding-right: 20px"
+						>
+							<button class="btn btn-default" type="button">Previous</button>
+						</span>
+
+						<input
+							type="text"
+							style="width: 510"
+							class="form-control"
+							placeholder="Search for Keywords to filter te result"
+							onkeypress="if (event.keyCode == 13) var people = readJSONData(this.value);"
+						/>
+
+						<span id="next" class="input-group-btn" style="padding-left: 20px">
+							<button class="btn btn-default" type="button">Next</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<div
+			class="container"
+			id="error"
+			style="
+				display: none;
+				text-align: center;
+				width: 80%;
+				border: 2px solid black;
+				padding-left: 0%;
+				font-size: 64px;
+				color: red;
+			"
+		>
+			<span style="font-size: 64px; color: black">&#128577;</span> No such
+			result found
+		</div>
+
+		<div class="container" id="mainDiv">
+			<div class="row" style="background-color: rgb(161, 248, 248)">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-10" style="background-color: rgb(161, 248, 248)">
+							<br />
+							<div
+								id="personName"
+								style="
+									text-align: center;
+									font-size: 42px;
+									font-weight: bold;
+									padding-left: 30%;
+								"
+							>
+								Person Name
+							</div>
+							<div
+								id="personAppliedFor"
+								style="text-align: center; font-size: 32px; padding-left: 30%"
+							>
+								Applied For
+							</div>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2" style="background-color: pink">
+					<div class="card">
+						<div class="card-header">
+							<h3 style="background-color: rgb(152, 156, 156)">
+								Personal Information
+							</h3>
+						</div>
+						<div class="card-body" id="personalInfo" style="text-align: right">
+							<p>gdksd</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header">
+							<h3 style="background-color: rgb(152, 156, 156)">
+								Technical Skills
+							</h3>
+						</div>
+						<div
+							class="card-body"
+							id="personalSkills"
+							style="text-align: right"
+						>
+							<p>gdksd</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header">
+							<h3 style="background-color: rgb(152, 156, 156)">Hobbies</h3>
+						</div>
+						<div
+							class="card-body"
+							id="personalHobbies"
+							style="text-align: right"
+						>
+							<p>gdksd</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<h2 style="font-weight: bold">Work experience in previous company</h2>
+					<div id="experience" style="padding-left: 40px">
+						<p>gdksd</p>
+					</div>
+					<h2 style="font-weight: bold">Projects</h2>
+					<div id="projects" style="padding-left: 40px">
+						<p>gdksd</p>
+					</div>
+					<h2 style="font-weight: bold">Education</h2>
+					<div id="education" style="padding-left: 40px">
+						<p>gdksd</p>
+					</div>
+					<h2 style="font-weight: bold">Internship</h2>
+					<div id="internship" style="padding-left: 40px">
+						<p>gdksd</p>
+					</div>
+					<h2 style="font-weight: bold">Achievements</h2>
+					<div id="achievements" style="padding-left: 40px">
+						<p>gdksd</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
